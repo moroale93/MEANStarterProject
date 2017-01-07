@@ -1,0 +1,8 @@
+<div>
+    <div class="glyphicon glyphicon-repeat" ng-click="updateList()"></div>
+    <button type="button" class="btn btn-danger" ng-click="deleteAllClick()" style="margin-bottom: 12px; float: right;">Delete all</button>
+    <div class="clearfix"></div>
+    <ul class="list-group">
+        <li ng-repeat="user in users track by $index" class="list-group-item">{{user.lastName}} {{user.firstName}}</li>
+    </ul>
+</div>
